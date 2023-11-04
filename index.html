@@ -1,58 +1,27 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<meta charset="utf-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<title>HTML Website</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title></title>
 </head>
 <body>
-	<h1>Rossler Boquiren's HTML Website</h1>
-        <hr>
-        <p>Welcome to my first HTML website where I demonstrate basic HTML skills on a simple website.</p>
-
-        <h2>Skills</h2>
-
-        <p>First, I use the basics such as <strong>BOLD</strong> or <em>Italics</em> to emphasize certain words above others.</p>
-
-        <p>Second, I attach a photo to highlight my interest in anything Japanese related content such as a cute photo of Takoyaki! It is one
-            of my favourite Japanese foods after all.</p><br>
-
-        <img src="https://img.freepik.com/free-vector/delicious-takoyaki-into-cardboard-bowl_52683-45978.jpg?w=1380&t=st=1696452554~exp=1696453154~hmac=7bdbb0a7085457181804760776799420508f1f86e374776be6da91ec79d17519" 
-            alt="Cute Takoyaki" width="300" height="300">
-
-            <h6><em>The photo above is resized at width and height of 300px</em></h6>
-
-        <p>Third, I will include an ordered list of things that I have scheduled to study as I progress with Web Development</p>
-
-            <ol>
-                <li id="li1">CSS</li>
-                <li id="li2">Javascript</li>
-                <li id="li3">React</li>
-            </ol>
-
-            <p>I am, however, enrolled at Herzing College in Montreal, QC Canada, for my second college diploma because the college has an opportunity
-                for graduates to study another program for free!<br> Therefore, I decided to take this opportunity and enrolled in their Web Programming cirriculum,
-                which will include, but not limited to the following list of courses: </p>
-
-                <ul id="categorytList">
-                    <li>Programming Languages:
-                        <ul id="specificLanguages">
-                            <li>Python</li>
-                            <li>C#</li>
-                        </ul>
-                    </li>
-                    <li>My SQL Database</li>
-                    <li>And more!</li>
-                </ul>
-        
-        <h2>End</h2>
-
-        <p>Thank you for taking the time and checking out my HTML Website!</p>
-        <p>It is not perfect and is still a work in progress but I do hope you learned something about me!</p>
-
-        <p>For any inquiries, you can find socials in the hyperlink below. I am looking forward to hearing from you!</p>
-        <a href="https://www.linkedin.com/in/rossler-boquiren-1a39a5283/">Rossler Boquiren's LinkedIn!</a><br>
-        <a href="https://github.com/RosslerGKBoquiren">Rossler Boquiren's Github!</a>
-        <hr>
+        <form id="practiceForm" action="https://jsonplaceholder.typicode.com/todos" method="POST">
+            <label for="firstName" id="firstNameLabel">First Name: </label>
+            <input type="text" id="firstName" name="firstName" placeholder="Enter your First Name..."><br>
+            <label for="lastName" id="lastNameLabel">Last Name: </label>
+            <input type="text" id="lastName" name="lastName" placeholder="Enter your Last Name"><br>
+            <label for="email" id="emailLabel">Email: </label>
+            <input type="email" id="email" name="email" placeholder="Enter your email">
+            <label for="age" id="ageLabel">Age: </label>
+            <input type="number" id="age" name="age" min="0" max="100" placeholder="Enter Age"><br>
+            <label for="male" id="maleLabel">Male </label>
+            <input type="radio" id="male" name="gender" value="Male">
+            <label for="female" id="femaleLabel">Female </label>
+            <input type="radio" id="female" name="gender" value="female"><br>
+            <label for="satisfaction" id="satisfactionLabel">satisfaction: </label>
+            <input type="range" id="satisfaction" name="satisfaction" min="0" max="100"><br>
+            <input type="submit" id="submit" name="submit">
+        </form>
 </body>
 </html>
