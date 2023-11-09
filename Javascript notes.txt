@@ -1,0 +1,235 @@
+
+let someString = 'This is some text.';
+
+Length of string
+value = someString.length // Output: 18
+
+Concatenating with a method
+value = firstName.concat(' ', lastName); // Output: "John Williams"
+
+Converting to upper case
+value = someString.toUpperCase(); // Output: "THIS IS SOME TEXT."
+
+To lower case
+value = someString.toLowerCase(); // Output: "this is some text."
+
+
+
+let someString = 'This is some text.';
+
+Get index of letter
+value = someString.indexOf('s'); // Output: 3
+
+Get character from index
+value = someString.charAt(1) // Output: h
+
+Substring
+value = someString.substring(0, 3) // Output: "Thi"
+
+Replace
+value = someString.replace('This', 'That'); // Output: "That is some text."
+
+Includes
+value = someString.includes('foo'); // Output: false
+
+Calculating square root
+value = Math.sqrt(64); // Output: 8
+
+Absolute value
+value = Math.abs(-5); // Output: 5
+
+Powers (First number to the power of second number)
+value = Math.pow(8, 2); // Output: 64
+
+Minimum
+value = Math.min(5, 2, 1, 4, 6); // Output: 1
+
+Maximum
+value = Math.max(2, 3, 1, 5, 4); // Output: 5
+
+Random value
+value = Math.random() // Output: random decimal number from 0 to 1;
+
+
+
+MATH
+
+Getting the value of PI
+value = Math.PI; // Output: 3.141592653589793
+
+Rounding a number
+value = Math.round(2.4); // Output: 2
+
+Rounding down to the nearest whole number
+value = Math.floor(3.67); // Output: 3
+
+Rounding up to the nearest whole number
+value = Math.ceil(2.1); // Output: 3
+
+
+LOOPs
+
+WHILE loop
+Loops are used to repeat a block of code a certain amount of times. It helps us not have to repeat code and we can use them to create some amazing programs. 
+Examples of types of loops:
+- while loops
+- do-while loops
+- for loops
+
+The "while loop" loops through a block of code as long as a specified condition is true. 
+
+It checks if the condition is true. If it is, it executes the code inside the loop. Then, it checks the condition again. If it's true, it runs the code again. 
+It keeps going until the condition is false. 
+
+
+DO-WHILE loop
+The difference between a do-while loop and a while loop is that the do-while loop first executes the code inside the loop once, then starts checking if the condition
+is true on the other iterations. The while loop tests the condition before running the code even once. A do-while loop will always execute the code inside the loop
+at least once. In a while loop, if the condition is false from the beginning, the code wont ever get executed. 
+
+
+FOR loop 
+For-loop are used much more than while or do-while loops. Their syntax is a bit more complicated. 
+
+for(statement1; statement2; statement3) {
+	// code here
+}
+
+Statement 1 is executed one time at the start of the for-loop. It's the first command executed once the for-loop starts and it's executed before the
+code inside the loop.
+
+statement 2 is the condition for executing the code in the loop. It's the same as the condition in a while loop. After every execution of the code, the for loop
+checks the condition. If its false, it stops. 
+
+Statement 3 is executed every iteration after every time the second code inside gets executed. It is the 4th thing that gets executed, 
+the third being the actualy code inside the loop. 
+
+When writing variable names in for-loops, the convention is to use short variable names. We use the name [i] in a for-loop. If we have another loop
+inside a for loop, the second for-loop should use the variable [j], the third [k], then [l] and onwards. .
+
+For-loops are mostly used when we need to do a certain number of iterations. They can be useful in situations where we don't know exact number, but we need to 
+iterate a variable amount of times. 
+
+
+const arr = ['Tiger', 'Dog', 'Cat']
+
+arr.push('Elephant');
+console.log(arr);
+// Output: ['Tiger', 'Dog', 'Cat', 'Elephant']
+
+arr.unshift('Bear');
+console.log(arr);
+// Output: ['Bear', 'Tiger', 'Dog', 'Cat']
+
+arr.pop();
+console.log(arr);
+// Output: ['Tiger', 'Dog'];
+
+arr.shift();
+console.log(arr);
+// Output: ['Dog', 'Cat']
+
+
+'CLEAN' loops
+1. don't craete infinite loops - your program will crash and your computer might freeze.
+2. write for-loops instead of while loops 
+3. Avoid loops. the less loops, the better. Use only when necessary.
+4. Avoid nested loops. 
+5. write as little code as possible insde of the loop. 
+
+
+
+ARRAY METHODS
+
+let arr = ['a', 'b', 'd', 'c']
+
+
+1. includes
+includes method is used to check whether the array contains a certain element. 
+console.log(arr.includes('f'));
+0utput: false.
+
+2. Index Of
+index of method is used hwne we need to find the index of a specific element. If there are multiple of the same elements, it returns the first index. 
+if the element we are searching for doesn't exist in the array, it returns -1. 
+const index = arr.indexOf('d');
+console.log(index);
+Output: 2.
+
+3. Reverse
+to reverse an array. 
+console.log(arr.reverse());
+Output: ['c', 'd', 'b', 'a'].
+
+4. Fill
+the fill method is used to fill an array with a value. We can also specify a range to be filled, instead of the whole array. 
+arr.fill('Hi');
+// Output: ['Hi', 'Hi', 'Hi', 'Hi'];
+
+arr.fill('Hi', 1, 3);
+// Output: ['a', 'Hi', 'Hi', 'c'];
+
+
+5. Is array
+this method is a static method of the Array class. 
+const variableIsArray = Array.isArray(arr);
+console.log(variableIsArray);
+Output: true.
+
+6. Splice
+thie method is used to add or remove elements from an array within a range of indexes
+// Adding elements:
+arr.splice(2, 1, 'f', 'g'); // This means add 2 elements starting from index 1 and the elements should be 'Apple' and 'Pear'.
+// Output: ['a', 'f', 'g', 'b', 'd', 'c'];
+
+// Removing elements
+arr.splice(1, 2); // This means starting at index 1, remove 2 elements.
+// Output: ['a', 'c']
+
+
+7. Sort
+this method is used to sort an array. It sorts strings AND numbers alphabetically. This means 25 would still be bigger than 100 
+because '2' is bigger than '1' alphabetically. 
+arr.sort();
+console.log(arr);
+Output: ['a', 'b', 'c', 'd'].
+
+
+FOR EACH & MAP
+const arr = [1, 2, 3, 4, 5];
+
+1. for each
+for each method calls a function for each element in an array. It does not modify the original array. 
+let sum = 0;
+arr.forEach(element => sum += element);
+console.log(sum);
+Output: 15
+
+2. map
+this method creates a new array from calling a function for every array element. it does not modify the original array.
+const newArr = arr.map(element => element * 10);
+console.log(newArr);
+Output: [10, 20, 30, 40, 50]
+
+
+FIND, SOME, EVERY
+let arr = [1, 2, 3, 4, 5]
+
+1. Find
+this method returns the value of the first element that passes a test. 
+const elementThatPasses = arr.find(element => element > 2 && element < 4);
+console.log(elementThatPasses);
+Output: 3
+
+2. Some
+checks if any of the elements inside of the array pass a test
+const numsAbove3InArr = arr.some(num => num > 3);
+console.log(numsAbove3InArray);
+Output: true
+
+3. Every
+checks if every element inside of the array pass a test
+const numsAbove3InArr = arr.every(num => num > 3);
+console.log(numsAbove3InArray);
+Output: false.
+
