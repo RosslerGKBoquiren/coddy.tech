@@ -47,3 +47,23 @@ b2 = (2 > 1) or (1 > 0)
 b3 = (2 < 1) and (1 > 2) 
 # Don't change the line below
 b4 = b1 and b2 and (not b3)
+
+# If statement
+a = 12
+b = 11
+# Don't change below this line
+c = 0
+if a >= b and not b < 10:
+    c = 2
+c += 1
+# If-else
+wind = int(input()) # Don't change this line
+status = "unset"
+if wind > 8: 
+    status = "Calm"
+elif wind >= 8 and wind <= 31:
+    status = "Breeze"
+elif wind >= 32 and wind <= 63:
+    status = "Gale"
+else:
+    status = "Storm"
