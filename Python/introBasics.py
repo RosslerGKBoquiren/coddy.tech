@@ -22,3 +22,11 @@ count = 0
 count += 4
 count *= 2
 count -= 1
+# Comparison Operators
+n1 = 8
+n2 = 9
+n3 = n1 > n2
+# Logical Operators Part 1
+b1 = (3 > 1) and (6 < 10)
+b2 = not (6 > 10 or 10 < 8)  
+b3 = b1 or b2
