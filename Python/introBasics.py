@@ -67,3 +67,39 @@ elif wind >= 32 and wind <= 63:
     status = "Gale"
 else:
     status = "Storm"
+
+# Recap Challenge#1
+# set the variable result based on the conditions:
+# if op is '+', set result with n1 + n2.
+# if op is '-', set result with n1 - n2.
+# if op is '/', set result with n1 / n2.
+# if op is '*', set result with n1 * n2.
+
+n1 = int(input()) # Don't change this line
+n2 = int(input()) # Don't change this line
+op = input() # Don't change this line
+result = 0
+
+if op == '+':
+    result = n1 + n2
+elif op == '-':
+    result = n1 - n2
+elif op == '/':
+    result = n1 / n2
+elif op == '*':
+    result = n1 * n2
+
+# Output
+print('I love Python programming')
+# Output with variables
+rnd = input() # Don't change this line
+print('The input is: ' + rnd)
+# Input
+# Write a program that get input from the user (their name), and then outputs Hello,  followed by the user's inputted name.
+# For example, if the user inputs Bob, the expected output is Hello, Bob.
+# You will need to:
+# Use input() to get input from the user.
+# Store the input in a variable.
+# Print Hello,  and the stored variable in the end.
+userName = input()
+print(f"Hello, {userName}")
