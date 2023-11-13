@@ -59,7 +59,7 @@ c += 1
 # If-else
 wind = int(input()) # Don't change this line
 status = "unset"
-if wind > 8: 
+if wind < 8: 
     status = "Calm"
 elif wind >= 8 and wind <= 31:
     status = "Breeze"
