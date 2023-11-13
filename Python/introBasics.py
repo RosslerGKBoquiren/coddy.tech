@@ -103,3 +103,6 @@ print('The input is: ' + rnd)
 # Print Hello,  and the stored variable in the end.
 userName = input()
 print(f"Hello, {userName}")
+
+# Cast
+
