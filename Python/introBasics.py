@@ -117,3 +117,12 @@ userAge = input('')
 age = int(userAge)
 missingYears = 120 - age
 print(f"{missingYears} years till 120")
+
+# Recap challenge#2
+# Write a program that gets an input from the user, a number, 1 or 0.
+# The program will output "T" if the input is 1 and "F" otherwise.
+number = input()
+if number == 1:
+    print('T')
+else:
+    print('F')
