@@ -108,3 +108,12 @@ print(f"Hello, {userName}")
 var1 = float(input())
 var2 = float(input())
 print(var1*var2)
+
+# Recap Challenge#1
+# Write a program that gets an input from the user, his age.
+# The program will output (print), the number of missing years till 120 (In a specific format, shown below)
+# For example, for input 25, the expected output is "95 years till 120".
+userAge = input('')
+age = int(userAge)
+missingYears = 120 - age
+print(f"{missingYears} years till 120")
