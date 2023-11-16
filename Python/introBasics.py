@@ -130,3 +130,12 @@ else:
 # for loop
 for i in range (3, 28):
     print(f"Hello Coddy: {i}")    
+# rehearsal
+# Write a program that get input from the user (their name), and then outputs Hello,  followed by the user's inputted name.
+# For example, if the user inputs Bob, the expected output is Hello, Bob.
+# You will need to:
+# Use input() to get input from the user.
+# Store the input in a variable.
+# Print Hello,  and the stored variable in the end.
+name = input('')
+print(f"Hello, {name}")
